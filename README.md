@@ -1,7 +1,5 @@
 # LF2 Edit Tool README
 
-Encrypting and decrypting Little Fighter 2 data files
-
 ![Visual Studio Code + Vim Extension + LF2 Edit Tool](img.gif)
 
 ## Commands

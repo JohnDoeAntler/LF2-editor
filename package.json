@@ -4,6 +4,7 @@
 	"description": "Encrypting and Decrypting lf2 data files.",
 	"version": "0.0.1",
 	"publisher": "JohnDoeAntler",
+	"icon": "icon.jpg",
 	"repository": {
 		"url": "https://github.com/JohnDoeAntler/LF2-editor.git"
 	},

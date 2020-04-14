@@ -1,0 +1,70 @@
+{
+	"name": "lf2-editor",
+	"displayName": "LF2 Edit Tool",
+	"description": "Encrypting and Decrypting lf2 data files.",
+	"version": "0.0.1",
+	"publisher": "JohnDoeAntler",
+	"repository": {
+		"url": "https://github.com/JohnDoeAntler/LF2-editor.git"
+	},
+	"engines": {
+		"vscode": "^1.44.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onCommand:lf2-editor.encryptDocument",
+		"onCommand:lf2-editor.decryptDocument",
+		"onCommand:lf2-editor.toggleDocument"
+	],
+	"main": "./out/extension.js",
+	"contributes": {
+		"languages": [
+			{
+				"id": "lf2-dat",
+				"extensions": [
+					".dat"
+				]
+			}
+		],
+		"configurationDefaults": {
+			"[lf2-dat]": {
+				"files.encoding": "iso88591"
+			}
+		},
+		"commands": [
+			{
+				"command": "lf2-editor.encryptDocument",
+				"title": "Encrypt document to LF2 data format."
+			}, {
+				"command": "lf2-editor.decryptDocument",
+				"title": "Decrypt document to readable code."
+			}, {
+				"command": "lf2-editor.toggleDocument",
+				"title": "Toggle encryption/decryption."
+			}
+		]
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"lint": "eslint src --ext ts",
+		"watch": "tsc -watch -p ./",
+		"pretest": "npm run compile && npm run lint",
+		"test": "node ./out/test/runTest.js"
+	},
+	"devDependencies": {
+		"@types/vscode": "^1.44.0",
+		"@types/glob": "^7.1.1",
+		"@types/mocha": "^7.0.2",
+		"@types/node": "^13.11.0",
+		"eslint": "^6.8.0",
+		"@typescript-eslint/parser": "^2.26.0",
+		"@typescript-eslint/eslint-plugin": "^2.26.0",
+		"glob": "^7.1.6",
+		"mocha": "^7.1.1",
+		"typescript": "^3.8.3",
+		"vscode-test": "^1.3.0"
+	}
+}

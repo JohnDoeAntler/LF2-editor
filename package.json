@@ -2,7 +2,7 @@
 	"name": "lf2-editor",
 	"displayName": "LF2 Edit Tool",
 	"description": "Encrypting and Decrypting lf2 data files.",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"publisher": "JohnDoeAntler",
 	"icon": "icon.jpg",
 	"repository": {
@@ -38,10 +38,12 @@
 			{
 				"command": "lf2-editor.encryptDocument",
 				"title": "Encrypt document to LF2 data format."
-			}, {
+			},
+			{
 				"command": "lf2-editor.decryptDocument",
 				"title": "Decrypt document to readable code."
-			}, {
+			},
+			{
 				"command": "lf2-editor.toggleDocument",
 				"title": "Toggle encryption/decryption."
 			}
